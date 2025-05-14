@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Capivara Amorosa</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #fde8e8;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 20px;
+    color: #5d1049;
+}
+
+strong {
+    color: #2d0b34;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.telefone {
+    background-color: #ff758c;
+    color: white;
+}
+
+.google {
+    background-color: #f8c8dc;
+    color: black;
+}
+
+.btn img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #5d1049;
+}
+    </style>
+</head>
+<body>
+     <div class="container">
+        <img src="img-removebg-preview 1.png" alt="Capivara Amorosa" class="logo">
+        <h1>Vamos conhecer <br><strong>novas pessoas</strong></h1>
+
+        <button class="btn telefone" onclick="loginTelefone()">
+            <img src="Group 939.png" alt="Telefone"> Login com telefone
+        </button>
+
+        <button class="btn google" onclick="loginGoogle()">
+            <img src="Group 940 (1).png" alt="Google"> Login com google
+        </button>
+
+        <p>Não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+    </div>
+
+    <script>
+        function loginTelefone() {
+           prompt("Login com telefone iniciado!");
+            // Aqui você pode redirecionar ou iniciar um processo de autenticação real
+            // window.location.href = 'pagina_telefone.html';
+        }
+
+        function loginGoogle() {
+            prompt("Login com Google iniciado!");
+            // Aqui você poderia integrar a autenticação do Google, por exemplo
+            // window.location.href = 'pagina_google.html';
+        }
+    </script>
+</body>
+</html>
